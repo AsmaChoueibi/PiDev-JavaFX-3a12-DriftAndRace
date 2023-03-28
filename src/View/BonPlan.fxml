@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.PrefixSelectionChoiceBox?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="770.0" prefWidth="1428.8" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.FXMLController">
+   <content>
+      <FlowPane hgap="4.0" prefHeight="2000.0" prefWidth="1428.8" style="-fx-background-color: #dcdcdc;" vgap="10.0">
+         <padding>
+            <Insets bottom="20.0" left="5.0" right="5.0" top="20.0" />
+         </padding>
+         <children>
+            <HBox prefHeight="39.0" prefWidth="996.0" spacing="170.0">
+               <children>
+                  <HBox prefHeight="45.0" prefWidth="291.0" spacing="20.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Search " wrappingWidth="85.33672332763672">
+                           <font>
+                              <Font name="Bradley Hand ITC" size="26.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="5.0" />
+                           </HBox.margin>
+                        </Text>
+                        <JFXTextArea fx:id="searchField" prefHeight="44.0" prefWidth="171.0">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="13.0" />
+                           </font>
+                        </JFXTextArea>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="20.0" prefWidth="209.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Filter" wrappingWidth="83.73668670654297">
+                           <font>
+                              <Font name="Bradley Hand ITC" size="23.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Text>
+                        <PrefixSelectionChoiceBox fx:id="sorting" prefHeight="31.0" prefWidth="119.0" />
+                     </children>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="300.0" />
+               </padding>
+               <FlowPane.margin>
+                  <Insets left="150.0" />
+               </FlowPane.margin>
+            </HBox>
+            <FlowPane fx:id="container" hgap="4.0" prefHeight="2000.0" prefWidth="1015.0" style="-fx-background-color: #dcdcdc;" vgap="50.0">
+               <padding>
+                  <Insets bottom="20.0" left="5.0" right="5.0" top="20.0" />
+               </padding>
+            </FlowPane>
+         </children>
+      </FlowPane>
+   </content>
+</ScrollPane>
